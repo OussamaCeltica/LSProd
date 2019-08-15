@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="@drawable/bg_simple"
+    android:gravity="center"
+    tools:context="com.leadersoft.celtica.lsprod.DeviceConfig">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo_semibold"
+        android:layout_marginBottom="30dp"
+        android:textSize="30sp"
+        android:textColor="@color/AppColor"
+        android:textAlignment="center"
+        android:text="@string/config_titre_connect"/>
+
+    <Spinner
+        android:id="@+id/config_type_device"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_butt"
+        android:fontFamily="@font/cairo_semibold"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/config_code_chef"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_butt"
+        android:gravity="center"
+        android:fontFamily="@font/cairo_semibold"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        android:textColorHint="@color/White"
+        android:hint="@string/config_hint_codeChef"/>
+
+    <TextView
+        android:id="@+id/config_code_ligne"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:background="@drawable/bg_butt"
+        android:fontFamily="@font/cairo_semibold"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        android:textColorHint="@color/White"
+        android:hint="@string/config_hint_codeligne"/>
+
+    <EditText
+        android:id="@+id/config_mdp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:background="@drawable/bg_butt"
+        android:fontFamily="@font/cairo_semibold"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        android:textColorHint="@color/White"
+        android:hint="@string/config_mdp_hint"/>
+
+
+    <TextView
+        android:id="@+id/config_connect"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/bg_butt"
+        android:fontFamily="@font/cairo_semibold"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        android:textColorHint="@color/White"
+        android:text="@string/config_valider_connect"/>
+
+
+</LinearLayout>

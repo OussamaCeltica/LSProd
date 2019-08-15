@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_simple"
+    tools:context="com.leadersoft.celtica.lsprod.Productions.FaireProdConfig">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo_semibold"
+        android:layout_marginBottom="60dp"
+        android:visibility="gone"
+        android:textSize="34sp"
+        android:textColor="@color/AppColor"
+        android:textAlignment="center"
+        android:text="@string/config_titre_connect"/>
+
+    <TextView
+        android:id="@+id/prod_config_code_chef"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_butt2"
+        android:gravity="center"
+        android:visibility="gone"
+        android:fontFamily="@font/cairo_semibold"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        android:textColorHint="@color/Gray2"
+        android:hint="@string/add_pr_selectChef"/>
+
+    <TextView
+        android:id="@+id/prod_config_code_ligne"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:background="@drawable/bg_butt2"
+        android:fontFamily="@font/cairo_semibold"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        android:textColorHint="@color/Gray2"
+        android:hint="@string/add_pr_selectLigne"/>
+
+
+
+    <TextView
+        android:id="@+id/prod_config_valider"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_butt"
+        android:fontFamily="@font/cairo_semibold"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        android:textColorHint="@color/White"
+        android:text="@string/add_pr_valider"/>
+
+</LinearLayout>

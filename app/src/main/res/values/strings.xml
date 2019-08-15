@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">LS Prod</string>
+
+    <!-- Les Toast -->
+    <string name="remplissage_err">Remplissez tous les champs.</string>
+    <string name="add_ok">Bien ajouté.</string>
+
+    <!-- string d etat -->
+    <string name="etat_enCours">EN COURS</string>
+    <string name="etat_supprimé">SUPPRIMÉ</string>
+    <string name="etat_validé">VALIDÉ</string>
+    <string name="etat_exporté">EXPORTÉ</string>
+
+
+    <!-- String d Accueil-->
+    <string name="add_stock_butt">Ajouter Production</string>
+    <string name="aff_prod_butt">Voir Productions</string>
+    <string name="sync_prod">Import/Export</string>
+    <string name="mantain_machine">Maintenances</string>
+    <string name="add_mantain_machine">Ajouter Maintenance</string>
+    <string name="aff_prep">Préparations</string>
+    <string name="add_prep">faire Préparation</string>
+
+
+    <!-- String de configuration device -->
+    <string name="config_deviceId">Donner un identifiant pour l appareil ..</string>
+    <string name="config_titre_connect">Connexion</string>
+    <string name="config_valider_connect">Connecter</string>
+    <string name="config_hint_codeligne">Code de ligne ..</string>
+    <string name="config_hint_codeChef">Code chef de ligne ..</string>
+    <string name="config_type_scanner">Scanner Intégré</string>
+    <string name="config_type_sansscanner">Sans Scanner</string>
+
+    <string name="config_remplissage_err">Remplissez tous les champs !</string>
+
+    <string name="config_mdp_hint">Mot de passe chef de ligne ..</string>
+    <string name="config_mdp_err">Mot de passe incorrect !</string>
+
+    <string name="code_ligne_err">Code ligne invalide !</string>
+    <string name="code_chef_err">Code chef invalide !</string>
+    <string name="code_chef_search_hint">Selectionner un chef ..</string>
+
+    <!-- String d Ajout de prod -->
+    <string name="mode_add_qt">Par Quantité</string>
+    <string name="mode_add_incr">Par Incrémentation</string>
+    <string name="add_pr_codebar_hint">Scanner le code barre</string>
+    <string name="add_pr_qt_hint">Donner la quantité ..</string>
+    <string name="add_pr_valider">Valider</string>
+    <string name="add_pr_pr_err">Ce Produit n\'exite pas !</string>
+    <string name="add_pr_noPrInProd">Ce   n\' est pas  le meme produit  !</string>
+    <string name="add_pr_valider_pr_vide">Séléctionner un produit !</string>
+    <string name="add_pr_valider_qt_vide">Donner une quantité</string>
+    <string name="add_pr_valider_qt_infZero">Donner une quantité supèrieur a zéro</string>
+    <string name="add_pr_valider_succ">Bien ajouté.</string>
+    <string name="add_pr_incr_changePrErr">Erreur , changement de produit !</string>
+    <string name="add_pr_noUser">Séléctionner un chef et une ligne premièrement !</string>
+    <string name="add_pr_selectLigne">Séléctionner une ligne ..</string>
+    <string name="add_pr_selectChef">Séléctionner le chef de ligne ..</string>
+    <string name="add_pr_conect_err">La production est ajouté mais non synchroniser.</string>
+    <string name="add_pr_depot">Séléctionner dépôt de déstination</string>
+    <string name="add_pr_lot">Donner numero de lot</string>
+    <string name="add_pr_mettrePause">Mettre en pause la production</string>
+    <string name="add_pr_relancerProd">Relancer la production</string>
+    <string name="add_pr_noLot">Donner le numéro de lot</string>
+    <string name="add_pr_noDepot">Ce codebarre ne réfère aucun dépôt ..</string>
+    <string name="add_pr_packaging">Quantité en carton</string>
+    <string name="add_pr_packaging_carton">carton</string>
+    <string name="add_pr_packaging_unité">unité</string>
+    <string name="add_pr_pauseTitre">Voulez vraiment mettre en pause la production ?</string>
+
+    <!-- String d Ajout de maintenance -->
+    <string name="add_maint_cnct_err">La maintenance est ajouté mais non synchroniser.</string>
+
+    <!-- String preparation -->
+    <string name="fairePrepConfig_pr">Séléctionner le produit fini ..</string>
+    <string name="panier_qt">Quantité</string>
+    <string name="panier_produit">Produit</string>
+    <string name="fairePrep_noPr">Veuillez séléctionner un produit fini</string>
+    <string name="fairePrep_noCodebar">Ce codebarre n\'exite pas</string>
+    <string name="fairePrep_valider">Terminer Préparation</string>
+    <string name="fairePrep_panier">Panier</string>
+
+    <string name="divPrep_codeBon">Bon:</string>
+    <string name="divPrep_pr">Produit:</string>
+    <string name="divPrep_date">Date:</string>
+
+    <string name="fairePrep_panierVide">Le panier est vide !</string>
+    <string name="divPrep_ligne">Ligne:</string>
+    <string name="fairePrepConfig_ligne">Séléctionner une ligne ..</string>
+    <string name="aff_prep_searchHint">chercher par nom produit ..</string>
+    <string name="prep_titre_cours">EN COURS</string>
+    <string name="prep_titre_valid">VALIDÉ</string>
+    <string name="prep_titre">Préparations:</string>
+
+
+
+    <!-- String Afficher Produit -->
+    <string name="aff_stock_titre">Les Productions</string>
+    <string name="aff_stock_time">Heure:</string>
+    <string name="aff_stock_codebare">Code barre:</string>
+    <string name="aff_stock_nomPr">Nom:</string>
+    <string name="aff_stock_qt">Quantité:</string>
+    <string name="aff_pr_type_arret">Pause</string>
+    <string name="aff_pr_tmp_arret">temps</string>
+
+    <!-- String Parametrage -->
+    <string name="param_titreAdmin">Administrateur</string>
+    <string name="param_LabelAdmin">Nom Admin:</string>
+    <string name="param_HinAdmin">Donner le nom d admin</string>
+
+    <string name="param_archive_titre">Archive des exportations ou suppressions.</string>
+    <string name="param_archive_desc">afficher les productions ou maintenances déja exporté ou supprimé. </string>
+
+    <string name="param_LabelMdp">Mot de passe:</string>
+    <string name="param_HintMdp">Donner le mot de passe</string>
+
+    <string name="param_conn">Valider</string>
+
+    <string name="param_sql_titre">Configuration du serveur</string>
+    <string name="param_sql_desc">configuration des cordonnées du serveur pour la synchronisation</string>
+
+    <string name="param_mdp_err">Mot de passe incorrect</string>
+    <string name="param_user_err">Nom d admin incorrect</string>
+
+    <string name="param">Parametrage</string>
+    <string name="param_deconect_titre">Déconecter</string>
+    <string name="param_deconect_desc">Fermer la session actuel d\'un chef de ligne </string>
+
+    <string name="param_admin_ChangeMdp">Changer le mot de passe d\'admin</string>
+    <string name="param_admin_DescChangeMdp">Changer le nom et le mot de passe d\'admin</string>
+    <string name="param_admin_ChangeMdp_nomAdmin">Nom d\'admin ..</string>
+    <string name="param_admin_ChangeMdp_Actuel">Mot de passe actuel ..</string>
+    <string name="param_admin_ChangeMdp_New">Nouveau mot de passe ..</string>
+    <string name="param_admin_ChangeMdp_succes">Bien changé.</string>
+    <string name="param_admin_ChangeMdp_err">Mot de passe actuel incorrect.</string>
+
+    <string name="param_typeDevice_titre">Changer le type de mobile</string>
+    <string name="param_typeDevice_desc">changer le mode de scanner codebarre </string>
+
+    <string name="param_lot_titre">Autoriser l\'ajout des lots</string>
+    <string name="param_lot_desc">autoriser l\'ajout des lots pour chaque production </string>
+    <string name="param_lot_autorise_oui">Autoriser</string>
+    <string name="param_lot_autorise_non">Non autoriser </string>
+
+    <string name="param_deviecId_titre">Changer l\'identifiant mobile</string>
+    <string name="param_deviecId_desc">changer l\identifiant de l appareil mobile. </string>
+
+    <string name="param_archiveProd">Archive Production</string>
+    <string name="param_archiveMaint">Archive Maintenance </string>
+
+
+    <!-- String Synchronisation -->
+    <string name="sync_titre">Synchronisation ..</string>
+    <string name="sync_wait">attendez SVP ..</string>
+    <string name="sync_conect">Connexion ..</string>
+    <string name="sync_conect_succ">Connexion réussite.</string>
+    <string name="sync_conect_err">Erreur, Réesayez ..</string>
+    <string name="sync_sql_err">Erreur de connexion ..</string>
+    <string name="sync_succ">Synchronisation terminé </string>
+    <string name="sync_BonExiste">Synchroniser Les productions premièrement.</string>
+
+
+    <string name="sync_export_prod_titre">Exporter Production</string>
+    <string name="sync_export_prod_desc">Exporter toutes les productions non synchroniser </string>
+
+    <string name="sync_import_prod_titre">Importer les produit</string>
+    <string name="sync_import_prod_desc">Importer tous les produit depuis l application desktop</string>
+
+    <string name="sync_import_chef_titre">Importer les chefs de ligne</string>
+    <string name="sync_import_chef_desc">Importer les codes des chefs de ligne </string>
+
+    <string name="sync_import_ligne_titre">Importer les lignes de production</string>
+    <string name="sync_import_ligne_desc">Importer les codes des lignes de production </string>
+
+    <string name="param_bd_formate_titre">Réinitialisation de l\'appareil</string>
+    <string name="param_bd_format_desc">Permet de vider toutes les tables sans synchronisation.</string>
+    <string name="faire_transf_suppPr_oui">Oui</string>
+    <string name="faire_transf_suppPr">Voulez vous vraiment supprimer ?</string>
+    <string name="panier_noVide_quiter">Voulez vraiment quitter ?</string>
+    <string name="div_qt_qtLabel">qt:</string>
+    <string name="div_qt_qtModif">donner une quantité ..</string>
+    <string name="divTypeProd_msg">Ajouter comme etant une:</string>
+    <string name="divTypeProd_prod">Production</string>
+    <string name="divTypeProd_prep">Préparation</string>
+    <string name="divPrepPanierAdd_pr">Séléctionner un produit ..</string>
+    <string name="divPrepPanierAdd_depot">Séléctionner le dépot source ..</string>
+    <string name="divPrepPanierAdd_lot">Donner le numero de lot ..</string>
+    <string name="divPrepPanierAdd_qt">Donner une quantité ..</string>
+    <string name="faireProdMode_addPr">Modifier les produits</string>
+    <string name="prep_produits">Produits Préparées</string>
+    <string name="archive">Archives</string>
+
+
+</resources>

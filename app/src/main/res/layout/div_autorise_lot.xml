@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/check_lot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/lot_oui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/param_lot_autorise_oui"/>
+            <RadioButton
+                android:id="@+id/lot_non"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/param_lot_autorise_non"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+</LinearLayout>

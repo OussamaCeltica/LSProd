@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.leadersoft.celtica.lsprod">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/prod"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/prod"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Preparations.FairePrep"></activity>
+        <activity android:name=".Preparations.FairePrepConfig" />
+        <activity android:name=".Preparations.AfficherPreparations" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Productions.AddStock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Productions.AddStockMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Productions.AfficherStock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DeviceConfig"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DeviceConfigScanner"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Parametrage" />
+        <activity
+            android:name=".Synchronisation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScannerIncrementation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Productions.UneProduction"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DeviceConfig2" />
+        <activity
+            android:name=".Maintenances.AfficherMaintenance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CodeBarScanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Maintenances.AddMaintenance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Maintenances.UneMaintenance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Accueil"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Productions.FaireProdConfig" />
+        <activity android:name=".Productions.FaireProdMode" />
+        <activity android:name=".Productions.FaireProd" />
+        <activity android:name=".SetDeviceId" />
+    </application>
+
+</manifest>

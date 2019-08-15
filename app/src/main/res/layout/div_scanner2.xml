@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/div_scanner_check_incr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Avec incrémentation"/>
+        <EditText
+            android:id="@+id/sacnner_code"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColorHint="@color/Gray2"
+            android:hint="Scanner codebarre .."
+            android:background="@drawable/bg_butt2"/>
+    </LinearLayout>
+</LinearLayout>

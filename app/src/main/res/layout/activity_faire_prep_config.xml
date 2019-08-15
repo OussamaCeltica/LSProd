@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_simple"
+    tools:context=".Preparations.FairePrepConfig">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/AppColor"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/prep_config_pr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_butt2"
+            android:gravity="center"
+            android:fontFamily="@font/cairo_semibold"
+            android:textSize="16sp"
+            android:textColorHint="@color/Gray2"
+            android:textColor="@color/Black"
+            android:hint="@string/fairePrepConfig_pr"/>
+
+        <TextView
+            android:id="@+id/prep_config_ligne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:minHeight="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_butt2"
+            android:gravity="center"
+            android:fontFamily="@font/cairo_semibold"
+            android:textSize="16sp"
+            android:textColorHint="@color/Gray2"
+            android:textColor="@color/Black"
+            android:hint="@string/fairePrepConfig_ligne"/>
+
+        <TextView
+            android:id="@+id/prep_config_valider"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:background="@drawable/bg_butt"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+            android:text="@string/add_pr_valider"/>
+
+    </LinearLayout>
+
+</LinearLayout>

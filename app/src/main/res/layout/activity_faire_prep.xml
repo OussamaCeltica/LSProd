@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_simple"
+    tools:context=".Preparations.FairePrep">
+
+    <LinearLayout
+        android:id="@+id/fairePrep_divAddPr"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:visibility="gone"
+        android:background="@drawable/bg_simple">
+
+        <TextView
+            android:id="@+id/divPrepPanierAdd_depot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_butt2"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="17sp"
+            android:hint="@string/divPrepPanierAdd_depot"
+            />
+
+        <TextView
+            android:id="@+id/divPrepPanierAdd_pr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_butt2"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="17sp"
+            android:hint="@string/divPrepPanierAdd_pr"
+            />
+
+
+
+        <EditText
+            android:id="@+id/divPrepPanierAdd_lot"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_butt2"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="17sp"
+            android:hint="@string/divPrepPanierAdd_lot"
+            android:text=""
+            />
+
+        <EditText
+            android:id="@+id/divPrepPanierAdd_qt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/bg_butt2"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="17sp"
+            android:hint="@string/divPrepPanierAdd_qt"
+            />
+
+        <TextView
+            android:id="@+id/divPrPanierAdd_valider"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="@drawable/bg_butt"
+            android:text="@string/add_pr_valider"
+            android:textSize="17dp"
+            android:textColor="@color/White"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/AppColor">
+        <ImageView
+            android:id="@+id/add_pr_toPanier"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:layout_gravity="right"
+            android:src="@drawable/add_pr_white"/>
+
+    </FrameLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/White"
+        android:gravity="center"
+        android:fontFamily="@font/cairo_semibold"
+        android:textSize="17sp"
+        android:textColor="@color/AppColor"
+        android:text="@string/fairePrep_panier"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/div_affich_panier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/faire_inventaire_valider"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_butt"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/cairo_semibold"
+        android:textColor="@color/White"
+        android:textSize="17sp"
+        android:text="@string/add_pr_valider"/>
+
+</LinearLayout>

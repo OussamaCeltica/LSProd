@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/div_Pr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_butt"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/Black"
+                android:text="Ligne:"/>
+
+            <TextView
+                android:id="@+id/div_pr_ligne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:lineSpacingExtra="-13sp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/White"
+                android:text="12345678955"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/Black"
+                android:text="Produit:"/>
+
+            <TextView
+                android:id="@+id/div_pr_codebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:lineSpacingExtra="-13sp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/White"
+                android:text="12345678955"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="-11dp"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/Black"
+                android:text="Date Début:"/>
+
+            <TextView
+                android:id="@+id/div_pr_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:background="@drawable/bg_export"
+                android:textSize="18sp"
+                android:textColor="@color/White"
+                android:text="2018-05-05 12:30"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:visibility="visible"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:lineSpacingExtra="-11dp"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/Black"
+                android:text="Date Fin:"/>
+
+            <TextView
+                android:id="@+id/div_pr_time_fin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:background="@drawable/bg_supp"
+                android:textSize="18sp"
+                android:textColor="@color/White"
+                android:text="2018-05-05 12:30"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/Black"
+                android:text="Quantité:"/>
+
+            <TextView
+                android:id="@+id/div_pr_qt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/White"
+                android:text="150025"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

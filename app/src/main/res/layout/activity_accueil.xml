@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Use DrawerLayout as root container for activity -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@drawable/acc_bg"
+    tools:context="com.leadersoft.celtica.lsprod.Accueil">
+
+    <!-- (Le div qui contient le body avec le header) Layout to contain contents of main body of screen (drawer will slide over this) -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/AppColor"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/drawer"
+                android:layout_width="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_butt"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:fontFamily="@font/cairo_semibold"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:text="LS Prod"/>
+        </LinearLayout>
+
+        <!-- (Le div qui contient les elements)  -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Separator top Line de GRID-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.05"/>
+
+            <!-- Premier Line de GRID-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.02"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.65"/>
+                <LinearLayout
+                    android:id="@+id/add_stock_butt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/acc_bg_butt"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="17dp"
+                        android:scaleY="1.2"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/add_pr"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:fontFamily="@font/cairo_semibold"
+                        android:layout_marginTop="-7dp"
+                        android:text="@string/add_stock_butt"
+                        android:textAlignment="center"
+                        android:textColor="@color/White"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.70"/>
+                <LinearLayout
+                    android:id="@+id/afficher_stock_butt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/acc_bg_butt"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="17dp"
+                        android:scaleY="1.2"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/voir_pr"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:fontFamily="@font/cairo_semibold"
+                        android:layout_marginTop="-7dp"
+                        android:text="@string/aff_prod_butt"
+                        android:textAlignment="center"
+                        android:textColor="@color/White"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.65"/>
+            </LinearLayout>
+
+            <!-- 2eme Line de GRID-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.65"/>
+
+
+                <LinearLayout
+                    android:id="@+id/add_mantain_butt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:background="@drawable/acc_bg_butt"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/add_machine2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:fontFamily="@font/cairo_semibold"
+                        android:layout_marginTop="-7dp"
+                        android:text="@string/add_mantain_machine"
+                        android:textAlignment="center"
+                        android:textColor="@color/White"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.70"/>
+                <LinearLayout
+                    android:id="@+id/mantain_butt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/acc_bg_butt"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginLeft="37dp"
+                        android:layout_marginRight="37dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/machine" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:layout_marginTop="-7dp"
+                        android:fontFamily="@font/cairo_semibold"
+                        android:text="@string/mantain_machine"
+                        android:textAlignment="center"
+                        android:textColor="@color/White"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.65"/>
+
+            </LinearLayout>
+
+            <!-- 3eme Line de GRID-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.65"/>
+
+
+                <LinearLayout
+                    android:id="@+id/add_prep_butt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:background="@drawable/acc_bg_butt"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/add_prep"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:fontFamily="@font/cairo_semibold"
+                        android:layout_marginTop="-7dp"
+                        android:text="@string/add_prep"
+                        android:textAlignment="center"
+                        android:textColor="@color/White"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.70"/>
+                <LinearLayout
+                    android:id="@+id/prep_butt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/acc_bg_butt"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginLeft="37dp"
+                        android:layout_marginRight="37dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/prep_prod" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:layout_marginTop="-7dp"
+                        android:fontFamily="@font/cairo_semibold"
+                        android:text="@string/aff_prep"
+                        android:textAlignment="center"
+                        android:textColor="@color/White"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.65"/>
+
+            </LinearLayout>
+
+            <!-- Separator bottom Line de GRID-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.05"/>
+
+
+            <LinearLayout
+                android:id="@+id/sync_butt"
+                android:layout_width="170dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="120dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="80dp"
+                android:visibility="gone"
+                android:background="@drawable/acc_bg_butt"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sync"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:layout_marginTop="-7dp"
+                    android:text="@string/sync_prod"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:fitsSystemWindows="true"
+        app:itemTextColor="@color/AppColor"
+        app:headerLayout="@layout/drawer_header"
+
+        app:menu="@menu/drawer_menu"/>
+
+</android.support.v4.widget.DrawerLayout>

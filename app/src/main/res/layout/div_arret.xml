@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:background="@color/AppColor">
+        <TextView
+            android:id="@+id/div_arret_motive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:fontFamily="@font/cairo_semibold"
+            android:lineSpacingExtra="-12sp"
+            android:textSize="16sp"
+            android:textColor="@color/White"
+            android:text="Coupure d electercité dans réseaux lo"/>
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/div_arret_tmp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:fontFamily="@font/cairo_semibold"
+            android:lineSpacingExtra="-12sp"
+            android:textSize="16sp"
+            android:textColor="@color/White"
+            android:text="100 min"/>
+
+    </LinearLayout>
+
+</LinearLayout>

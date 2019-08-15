@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_simple"
+    tools:context="com.leadersoft.celtica.lsprod.Productions.AddStockMode">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/AppColor"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/cairo_semibold"
+            android:textSize="17sp"
+            android:textColor="@color/White"
+            android:text="Mode d'ajout des Produits"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/pr_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/Black"
+            android:textSize="17sp"
+            android:text="Produit:"/>
+        <TextView
+            android:id="@+id/add_stock_mode_nom_pr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="70dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/AppColor"
+            android:textSize="17sp"
+            android:text="MAUCHOIR LILAS"/>
+
+        <TextView
+            android:id="@+id/add_stock_cumule_qt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:background="@drawable/acc_bg_butt"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/White"
+            android:textSize="17sp"
+            android:text="Cummuler la quantité"/>
+        <TextView
+            android:id="@+id/add_stock_stopProd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:background="@drawable/acc_bg_butt"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/White"
+            android:textSize="17sp"
+            android:text="Mettre en pause la production"/>
+        <TextView
+            android:id="@+id/add_stock_par_qt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/acc_bg_butt"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/White"
+            android:textSize="17sp"
+            android:text="Premier Scanner"/>
+
+
+        <TextView
+            android:id="@+id/add_stock_par_incr"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/acc_bg_butt"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/White"
+            android:textSize="17sp"
+            android:text="Par Incrémentaion"/>
+
+
+    </LinearLayout>
+</LinearLayout>

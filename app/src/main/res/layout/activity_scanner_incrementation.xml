@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rooot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="@drawable/bg_simple"
+    tools:context="com.leadersoft.celtica.lsprod.ScannerIncrementation">
+    <TextView
+        android:id="@+id/scann_incr_nom_pr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="70dp"
+        android:fontFamily="@font/cairo_semibold"
+        android:textAlignment="center"
+        android:textColor="@color/AppColor"
+        android:textSize="25sp"
+        android:lineSpacingExtra="-15dp"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/scann_incr_qt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:fontFamily="@font/cairo_semibold"
+        android:textAlignment="center"
+        android:textColor="@color/AppColor"
+        android:textSize="21sp"
+        android:text="0"/>
+
+    <EditText
+        android:id="@+id/scann_incr_codebar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_butt"
+        android:fontFamily="@font/cairo_semibold"
+        android:textColor="@color/White"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:textColorHint="@color/White"
+        android:hint="@string/add_pr_codebar_hint"/>
+
+    <TextView
+        android:id="@+id/scann_incr_valider"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="@drawable/bg_butt"
+        android:fontFamily="@font/cairo_semibold"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        android:text="@string/add_pr_valider"/>
+</LinearLayout>

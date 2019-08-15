@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimenssion d accueil -->
+    <dimen name="acc_butt" >140dp</dimen>
+    <dimen name="acc_butt_margin" >80dp</dimen>
+</resources>

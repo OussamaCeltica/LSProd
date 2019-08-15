@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/panier_qt_nom_pr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:fontFamily="@font/cairo_semibold"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:text="Kaspersky anti virus"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/div_qt_qtLabel"/>
+        <EditText
+            android:id="@+id/panier_qt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/cairo_semibold"
+            android:textSize="15dp"
+            android:hint="@string/div_qt_qtModif"
+            android:textAlignment="center"
+            android:textColor="@color/AppColor"
+            android:textColorHint="@color/AppColor"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/valider_pr_panier"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/cairo_semibold"
+        android:background="@drawable/bg_butt"
+        android:gravity="center"
+        android:text="@string/add_pr_valider"
+        android:textColor="@color/White"/>
+
+
+</LinearLayout>

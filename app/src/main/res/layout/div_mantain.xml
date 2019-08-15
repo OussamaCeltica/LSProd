@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/div_maint_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_butt"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/div_maint_msg"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:background="@drawable/bg_supp"
+            android:textColor="@color/White"
+            android:textSize="11sp"
+            android:text="SUPPRIMÉ"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/Black"
+                android:text="Ligne:"/>
+
+            <TextView
+                android:id="@+id/div_maint_ligne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:lineSpacingExtra="-13sp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/White"
+                android:text="12345678955"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/Black"
+                android:text="Type:"/>
+
+            <TextView
+                android:id="@+id/div_mantain_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:lineSpacingExtra="-13sp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/White"
+                android:text="Changement des joints de killas"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/Black"
+                android:text="Date Début:"/>
+
+            <TextView
+                android:id="@+id/div_mantain_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_export"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/White"
+                android:text="2015-05-05 12:30"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:visibility="visible"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/Black"
+                android:text="Date Fin:"/>
+
+            <TextView
+                android:id="@+id/div_pr_time_fin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_supp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/White"
+                android:text="2015-05-05 10:30"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/Black"
+                android:text="Employé:"/>
+
+            <TextView
+                android:id="@+id/div_mantain_emp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:lineSpacingExtra="-13dp"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/White"
+                android:text="Mohamed amine salah"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

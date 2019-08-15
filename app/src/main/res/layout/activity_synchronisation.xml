@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_simple"
+    tools:context="com.leadersoft.celtica.lsprod.Synchronisation">
+
+    <!-- deprecated Afficher lees option de synchronisation -->
+    <ScrollView
+        android:id="@+id/div_synch_functions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/sync_import_prod_butt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:layout_marginBottom="-10dp"
+                    android:lineSpacingExtra="-14dp"
+                    android:textColor="@color/AppColor"
+                    android:textSize="25sp"
+                    android:text="@string/sync_import_prod_titre"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:lineSpacingExtra="-7dp"
+                    android:textColor="@color/Black"
+                    android:textSize="18sp"
+                    android:text="@string/sync_import_prod_desc"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sync_import_chef_butt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:layout_marginBottom="-10dp"
+                    android:lineSpacingExtra="-14dp"
+                    android:textColor="@color/AppColor"
+                    android:textSize="25sp"
+                    android:text="@string/sync_import_chef_titre"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:lineSpacingExtra="-7dp"
+                    android:textColor="@color/Black"
+                    android:textSize="18sp"
+                    android:text="@string/sync_import_chef_desc"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sync_import_ligne_butt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:layout_marginBottom="-10dp"
+                    android:lineSpacingExtra="-14dp"
+                    android:textColor="@color/AppColor"
+                    android:textSize="25sp"
+                    android:text="@string/sync_import_ligne_titre"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:lineSpacingExtra="-7dp"
+                    android:textColor="@color/Black"
+                    android:textSize="18sp"
+                    android:text="@string/sync_import_ligne_desc"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sync_export_prod_butt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:layout_marginBottom="-10dp"
+                    android:lineSpacingExtra="-14dp"
+                    android:textColor="@color/AppColor"
+                    android:textSize="25sp"
+                    android:text="@string/sync_export_prod_titre"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:lineSpacingExtra="-7dp"
+                    android:textColor="@color/Black"
+                    android:textSize="18sp"
+                    android:text="@string/sync_export_prod_desc"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--  Afficher lees option de synchronisation -->
+    <LinearLayout
+        android:id="@+id/div_options"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/AppColor"
+            android:textSize="30sp"
+            android:text="Synchronisation"/>
+
+        <TextView
+            android:id="@+id/sync_import_butt"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/bg_butt"
+            android:fontFamily="@font/cairo_semibold"
+            android:textSize="16sp"
+            android:textColor="@color/White"
+            android:text="Importer du serveur"/>
+
+        <TextView
+            android:id="@+id/sync_export_butt"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:background="@drawable/bg_butt"
+            android:fontFamily="@font/cairo_semibold"
+            android:textSize="16sp"
+            android:textColor="@color/White"
+            android:text="Exporter vers serveur"/>
+    </LinearLayout>
+
+    <!-- Afficher le formulaire de SQL_Connect -->
+    <LinearLayout
+        android:id="@+id/DivSqlConnect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/cairo_semibold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/AppColor"
+            android:text="Adresse ip:"/>
+        <EditText
+            android:id="@+id/synch_ip"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:hint="Ex:193.110.128.1"
+            android:singleLine="true"
+            android:textColorHint="@color/Gray2"
+            android:textColor="@color/Black"
+            android:background="@drawable/bg_butt2"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/cairo_semibold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/AppColor"
+            android:text="Port:"/>
+        <EditText
+            android:id="@+id/synch_port"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:hint="Ex:5555"
+            android:singleLine="true"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/Gray2"
+            android:background="@drawable/bg_butt2"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/cairo_semibold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/AppColor"
+            android:text="Nom de BD:"/>
+        <EditText
+            android:id="@+id/synch_bd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:singleLine="true"
+            android:textColor="@color/Black"
+            android:hint="Donner le nom de BD"
+            android:textColorHint="@color/Gray2"
+            android:background="@drawable/bg_butt2"
+            android:textAlignment="center"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/cairo_semibold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/AppColor"
+            android:text="Nom d'utilisateur:"/>
+        <EditText
+            android:id="@+id/synch__user"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:singleLine="true"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/Gray2"
+            android:hint="Donner le nom d utilisateur"
+            android:background="@drawable/bg_butt2"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/cairo_semibold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/AppColor"
+            android:text="Mot de passe:"/>
+        <EditText
+            android:id="@+id/synch_mdp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/Gray2"
+            android:hint="Donner le mot de passe"
+            android:textColor="@color/Black"
+            android:background="@drawable/bg_butt2"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/synch_Butt"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:fontFamily="@font/cairo_semibold"
+
+            android:background="@drawable/bg_butt"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            android:text="Connectez"/>
+
+
+    </LinearLayout>
+
+    <!-- Pour Le Login D admin -->
+    <LinearLayout
+        android:id="@+id/sync_div_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_simple"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textAlignment="center"
+            android:textColor="@color/AppColor"
+            android:textSize="28sp"
+            android:text="@string/param_titreAdmin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo_semibold"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/AppColor"
+            android:text="@string/param_LabelAdmin"/>
+        <EditText
+            android:id="@+id/sync_admin_nom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_butt2"
+            android:singleLine="true"
+            android:hint="@string/param_HinAdmin"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColorHint="@color/Gray2"
+            android:textAlignment="center"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo_semibold"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/AppColor"
+            android:text="@string/param_LabelMdp"/>
+        <EditText
+            android:id="@+id/sync_admin_mdp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_butt2"
+            android:hint="@string/param_HintMdp"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColorHint="@color/Gray2"
+            android:textAlignment="center"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/sync_admin_conn"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:background="@drawable/bg_butt"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/White"
+            android:text="@string/param_conn"/>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/div_msgInp_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/Black"
+            android:textSize="17sp"
+            android:text="Mon Message"/>
+
+        <EditText
+            android:id="@+id/div_msgInp_value"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="number"
+            android:background="@drawable/bg_butt2"
+            android:fontFamily="@font/cairo_semibold"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/Gray2"
+            android:hint="@string/add_pr_qt_hint"/>
+
+        <TextView
+            android:id="@+id/div_msgInp_add"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/acc_bg_butt"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/White"
+            android:textSize="17sp"
+            android:text="@string/add_pr_valider"/>
+    </LinearLayout>
+</LinearLayout>

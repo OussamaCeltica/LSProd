@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_simple"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/affprep_root"
+    android:orientation="vertical"
+    tools:context=".Preparations.AfficherPreparations">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/AppColor"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:src="@drawable/loop"/>
+            <EditText
+                android:id="@+id/affprep_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/butt_back_degrade"
+                android:fontFamily="@font/cairo_semibold"
+                android:hint="@string/aff_prep_searchHint"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/AppColor"
+                />
+            <ImageView
+                android:id="@+id/affprep_addPrep"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_gravity="right"
+                android:src="@drawable/add_pr_white"/>
+
+            <ImageView
+                android:id="@+id/affprep_menu"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:src="@drawable/menu_point"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/affprep_titre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/AppColor"
+            android:text="Preparation: Validé"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/div_affich_prep"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/affprep_divOptions"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/AppColor">
+
+            <LinearLayout
+                android:id="@+id/affprep_prepValid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:background="@drawable/butt_back_degrade"
+                >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:src="@drawable/validate_black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp"
+                    android:text="Validé"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/affprep_prepCours"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:background="@drawable/butt_back_degrade"
+                >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="3dp"
+                    android:src="@drawable/wait"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp"
+                    android:text="En cours"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>

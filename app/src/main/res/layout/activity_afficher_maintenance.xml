@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/bg_simple"
+    android:orientation="vertical"
+    tools:context="com.leadersoft.celtica.lsprod.Maintenances.AfficherMaintenance">
+
+    <!-- Bar Title -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/AppColor">
+
+        <!-- div de titre et butt serach / add -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <ImageView
+                android:id="@+id/mantain_search_butt"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/search_ic"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/White"
+                android:text="Les Maintenances"/>
+            <ImageView
+                android:id="@+id/mantain_ligne_butt"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:padding="6dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ligne_prod"/>
+        </FrameLayout>
+
+        <!-- div de recherche -->
+        <FrameLayout
+            android:id="@+id/mantain_div_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="-40dp"
+            android:background="@color/AppColor"
+            >
+            <ImageView
+                android:id="@+id/mantain_back_butt"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/back"/>
+            <EditText
+                android:id="@+id/mantain_searchInp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"
+                android:background="@color/AppColor"
+                android:gravity="center"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="15sp"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White"
+                android:hint="Chercher .."/>
+            <ImageView
+                android:id="@+id/mantain_calendar_butt"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:src="@drawable/calendar"/>
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:fontFamily="@font/cairo_semibold"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/AppColor"
+            android:textSize="17sp"
+            android:text="Ligne:"/>
+        <TextView
+            android:id="@+id/aff_prod_nomLigne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/Black"
+            android:textSize="17sp"
+            android:text="Toutes Les lignes"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/div_affich_mantain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
